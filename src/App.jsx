@@ -18,7 +18,7 @@ function App() {
     if (input){
       setInput(evaluate(input))
     }else{
-      alert("No hay nada en la pantalla");
+      alert("Por favor ingrese valores para realizar calculos");
     }
   };
 
