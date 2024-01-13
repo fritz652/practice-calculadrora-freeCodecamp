@@ -9,11 +9,17 @@ import {evaluate} from 'mathjs'
 function App() {
 
   const [input,setInput] = useState('');
+
   const agregarInput = val =>{
     setInput(input + val);
   };
+
   const calcularResultado =() =>{
-    setInput(evaluate(input));
+    if (input){
+      setInput(evaluate(input))
+    }else{
+      alert("No hay nada en la pantalla");
+    }
   };
 
   return (
